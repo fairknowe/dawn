@@ -1,106 +1,67 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "main": {
+      "type": "main-search",
       "settings": {
-        "desktop_text_box_position": "flex-end"
-      },
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_label_2": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "button"
-      ]
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "collapse_on_larger_devices": false,
+        "article_show_date": true,
+        "article_show_author": false
+      }
     },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
         "heading": {
-          "type": "heading"
+          "type": "heading",
+          "settings": {
+            "heading": "Products from all over the internet",
+            "heading_size": "h1"
+          }
         },
         "text": {
-          "type": "text"
-        },
-        "button": {
-          "type": "button"
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Through GotAny and it's Partner Stores.<\/strong><\/p><p><strong>Powered by skuAlert.<\/strong> With its targeted notification system, skuAlert makes <strong>happy customers<\/strong> by letting them know that their item of interest is <strong>back in stock<\/strong>.<br\/><\/p><p>Look for the <strong>skuAlert<\/strong> app in the Shopify App Store, with a free version available.<br\/><\/p>"
+          }
         }
       },
       "block_order": [
         "heading",
-        "text",
-        "button"
-      ]
+        "text"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
     },
     "featured_products": {
       "type": "featured-collection",
       "settings": {
         "title": "Featured products",
         "collection": "all",
-        "image_ratio": "square"
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
       }
-    },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "video": {
-          "type": "video"
-        },
-        "product": {
-          "type": "product"
-        },
-        "collection": {
-          "type": "collection"
-        }
-      },
-      "block_order": [
-        "video",
-        "product",
-        "collection"
-      ]
-    },
-    "video": {
-      "type": "video"
-    },
-    "multi_column": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column"
-        },
-        "column2": {
-          "type": "column"
-        },
-        "column3": {
-          "type": "column"
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ]
     }
   },
   "order": [
-    "image_banner",
+    "main",
     "rich_text",
-    "featured_products",
-    "collage",
-    "video",
-    "multi_column"
+    "featured_products"
   ]
 }
